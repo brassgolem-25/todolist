@@ -27,7 +27,15 @@ const item1 = new Item({
   name: "Welcome to your to-do list!!"
 })
 
-const defaultArr = [item1];
+const item2 = new Item({
+  name: "Hit the + sign to add any new item"
+});
+
+const item3 = new Item({
+  name: "<-- Hit this to delete"
+});
+
+const defaultArr = [item1,item2,item3];
 
 const listSchema = new mongoose.Schema({
   name: String,
